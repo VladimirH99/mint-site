@@ -7,20 +7,20 @@ export const Screen = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 `;
 
 // Used for providing space between components
 export const SpacerXSmall = styled.div`
-  height: 8px;
+  height: 2px;
   width: 8px;
 `;
 
 // Used for providing space between components
 export const SpacerSmall = styled.div`
-  height: 16px;
+  height: 5px;
   width: 16px;
 `;
 
@@ -33,7 +33,7 @@ export const SpacerMedium = styled.div`
 // Used for providing space between components
 export const SpacerLarge = styled.div`
   height: 32px;
-  width: 32px;
+  width: 10vw;
 `;
 
 // Used for providing a wrapper around a component
