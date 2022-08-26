@@ -18,13 +18,14 @@ export const StyledButton = styled.button`
   color: black;
   width: 100px;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   :active {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+  };
+  transition: 0.3s;
+  :hover {
+    box-shadow: 0 0 5px 2px var(--secondary);
   }
 `;
 
@@ -59,16 +60,17 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 100%;
+  width: 90%;
   @media (min-width: 767px) {
     flex-direction: row;
+    width: 60%;
   }
 `;
 
 export const StyledLogo = styled.img`
-  width: 300px;
+  width: 200px;
   @media (min-width: 767px) {
-    width: 200px;
+    width: 250px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -219,7 +221,7 @@ function App() {
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+                {truncate(CONFIG.CONTRACT_ADDRESS, 27)}
               </StyledLink>
             </s.TextDescription>
             <s.SpacerSmall />
@@ -358,8 +360,8 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
-              backgroundColor: "rgba(255, 255, 255, 0.774)",
+              color: "white",
+              backgroundColor: "#505050",
               borderRadius: "15px",
               padding: "10px"
             }}

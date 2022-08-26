@@ -33,7 +33,7 @@ export const SpacerMedium = styled.div`
 // Used for providing space between components
 export const SpacerLarge = styled.div`
   height: 32px;
-  width: 10vw;
+  width: 5vw;
 `;
 
 // Used for providing a wrapper around a component
